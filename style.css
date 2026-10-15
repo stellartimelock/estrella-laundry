@@ -22,3 +22,9 @@ figure img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}figcaption
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}table{border-collapse:collapse;width:100%}td{padding:8px;border-bottom:1px solid #dde4ef}
 .small{font-size:.9em}a{color:#1565c0}footer{background:var(--navy);color:#fff;text-align:center;padding:24px}
 .fw{font-family:"Brush Script MT","Lobster","Pacifico",cursive;color:var(--red);-webkit-text-stroke:1px #fff;font-size:1.6em;font-style:italic}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:700px;background:#fff;padding:20px;border-radius:12px;border-top:5px solid var(--sky);box-shadow:0 2px 8px #0001}
+.contact label{display:flex;flex-direction:column;font-weight:600;color:var(--navy);gap:6px}.contact .full{grid-column:1/-1}
+.contact input,.contact textarea{font:inherit;padding:10px;border:1px solid #c5d0e0;border-radius:8px}.contact input:focus,.contact textarea:focus{outline:2px solid var(--sky)}
+.contact button{border:0;cursor:pointer;justify-self:start;font:inherit;font-weight:700}
+.thanks{display:none;background:var(--gold);color:var(--navy);padding:10px 14px;border-radius:8px;font-weight:700}.thanks:target{display:block}
+@media(max-width:600px){.contact{grid-template-columns:1fr}}
