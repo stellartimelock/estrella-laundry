@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://estrellalaundry.com/sitemap.xml

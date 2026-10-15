@@ -1,0 +1,24 @@
+:root{--navy:#14307a;--sky:#2fa8ec;--red:#d8262e;--gold:#f7c531;--orange:#f39a1e}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,Roboto,sans-serif;color:#1b2540;background:#f5f8fc}
+.wrap{max-width:1050px;margin:auto;padding:0 20px}.demo{background:var(--gold);color:#5a1a00;text-align:center;font-weight:700;padding:6px;font-size:14px}
+.hero{background:linear-gradient(rgba(10,25,70,.55),rgba(10,25,70,.75)),url(img/front.jpg) center/cover;color:#fff;text-align:center;padding:60px 20px 70px}
+.sign{display:inline-block;background:var(--navy);border:4px solid #fff;border-radius:14px;padding:18px 36px 14px;box-shadow:0 10px 30px #0008;position:relative}
+.stars{background:var(--sky);color:#fff;border-radius:8px;letter-spacing:.6em;padding:4px 0 4px .6em;font-size:20px}
+.word{font-family:"Brush Script MT","Lobster","Pacifico","Segoe Script","URW Chancery L",cursive;font-style:italic;font-weight:700;color:var(--red);font-size:clamp(3rem,10vw,5.5rem);line-height:1.1;margin-top:6px;
+-webkit-text-stroke:2px #fff;paint-order:stroke fill;text-shadow:0 3px 0 #0005}
+.laundry{font-weight:900;font-size:clamp(1.6rem,5vw,2.6rem);letter-spacing:.25em;color:#fff}
+.band{background:var(--gold);color:var(--red);font-weight:800;font-style:italic;border-radius:6px;padding:4px 10px;margin-top:8px;font-size:1.1rem}
+.gold{position:absolute;top:-26px;right:-22px;font-size:54px;color:var(--orange);text-shadow:0 0 0 #fff,0 2px 6px #0007}
+.tag{font-size:1.2rem;margin-top:22px;text-shadow:0 2px 6px #000}
+.btns{margin-top:20px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{background:var(--red);color:#fff;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:700}.btn.alt{background:var(--gold);color:var(--navy)}
+section{padding:36px 0;border-bottom:1px solid #dde4ef}h2{color:var(--navy);border-left:6px solid var(--sky);padding-left:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:#fff;border-top:5px solid var(--sky);border-radius:12px;padding:18px;box-shadow:0 2px 8px #0001}.card h3{color:var(--red)}
+.amen{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none}.amen li{background:var(--navy);color:#fff;border-radius:20px;padding:8px 14px}
+.amen li:before{content:"★ ";color:var(--gold)}.ph{color:#b05a00;font-style:italic;font-size:.9em}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}figure{margin:0;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px #0002}
+figure img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}figcaption{padding:10px 14px;font-weight:600;color:var(--navy)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}table{border-collapse:collapse;width:100%}td{padding:8px;border-bottom:1px solid #dde4ef}
+.small{font-size:.9em}a{color:#1565c0}footer{background:var(--navy);color:#fff;text-align:center;padding:24px}
+.fw{font-family:"Brush Script MT","Lobster","Pacifico",cursive;color:var(--red);-webkit-text-stroke:1px #fff;font-size:1.6em;font-style:italic}
