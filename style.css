@@ -36,3 +36,7 @@ body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
 .bottombar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(20,48,122,.97);box-shadow:0 -4px 14px #0003}
 .bottombar .btn{text-align:center;padding:13px 8px;white-space:nowrap;font-size:clamp(.9rem,3.8vw,1.05rem);max-width:none}
 @media(min-width:700px){.bottombar{padding-left:calc(50% - 340px);padding-right:calc(50% - 340px)}}
+.card.feature{grid-column:1/-1;background:linear-gradient(135deg,var(--navy),#1d4fb0);color:#fff;border-top:5px solid var(--gold);padding:22px 24px}
+.card.feature h3{color:#fff;font-size:1.5rem;margin:.3em 0}.card.feature p{font-size:1.05rem;max-width:760px}
+.badge{display:inline-block;background:var(--gold);color:var(--red);font-weight:800;border-radius:20px;padding:3px 12px;font-size:.85rem}
+.fbtns{display:flex;flex-wrap:wrap;gap:10px}.card.feature .btn.alt{background:var(--gold);color:var(--navy)}
