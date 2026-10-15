@@ -28,5 +28,6 @@ figure img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}figcaption
 .contact button{border:0;cursor:pointer;justify-self:start;font:inherit;font-weight:700}
 .thanks{display:none;background:var(--gold);color:var(--navy);padding:10px 14px;border-radius:8px;font-weight:700}.thanks:target{display:block}
 @media(max-width:600px){.contact{grid-template-columns:1fr}}
-.cta{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:520px;margin:22px auto 0;padding:0 16px}
+.cta{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;max-width:720px;margin:22px auto 0;padding:0 16px}
 .cta .btn{text-align:center;padding:14px 10px;white-space:nowrap;font-size:clamp(.85rem,3.6vw,1rem)}
+.btn.fb{background:#1877f2;color:#fff}@media(max-width:600px){.ph-num{display:none}.cta{padding:0 10px;gap:8px}}
