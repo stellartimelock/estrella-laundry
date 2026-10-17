@@ -5,3 +5,4 @@
 .lbl{width:100%;font-weight:700;color:var(--navy);font-size:.9rem}code{font-size:1.4rem;background:#f0f4f9;padding:6px 12px;border-radius:8px;color:#132242}
 .copy{border:0;cursor:pointer;font:inherit;font-weight:700}.qr{display:block;margin:18px auto;width:260px;max-width:80%;height:auto;border:8px solid #ffffff;outline:3px solid var(--navy);border-radius:6px}
 .note{color:#384357}
+.wifihero{padding-bottom:40px}.wificard{margin-top:-20px}
