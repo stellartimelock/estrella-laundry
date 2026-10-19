@@ -188,3 +188,6 @@ footer .fl{font-family:EstrellaSans,Montserrat,sans-serif;font-weight:800;letter
 footer .fs{margin-top:8px;font-size:.95rem;color:#dbe6f7}
 .bottombar{grid-template-columns:1fr}
 @media(min-width:700px){.bottombar{padding-left:calc(50% - 200px);padding-right:calc(50% - 200px)}}
+
+/* no footer */
+main.wrap{padding-bottom:calc(90px + env(safe-area-inset-bottom))}
