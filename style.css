@@ -144,3 +144,5 @@ section+section::before{background:linear-gradient(90deg,transparent,rgba(33,54,
 .pb.mc{background:#fff;border:1px solid #d8dce4;padding:0 6px}.pb.mc i{display:block;width:16px;height:16px;border-radius:50%;background:#eb001b}.pb.mc i+i{background:#f79e1b;margin-left:-7px;mix-blend-mode:multiply}
 .pb.apay{background:#000;color:#fff;font-weight:600;letter-spacing:.01em}
 .pb.tap{background:#fff;border:1px solid #d8dce4;color:#21366d;font-weight:700}
+.fbwrap.fbwrap-svc{margin:14px 0 4px;padding:0}
+.fbwrap.fbwrap-svc{margin:-18px 0 0}
