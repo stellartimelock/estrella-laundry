@@ -163,3 +163,6 @@ section+section::before{background:linear-gradient(90deg,transparent,rgba(33,54,
 .svclist .card.feature h3{color:#fff;font-size:1.3rem;margin:.3em 0 0}.svclist .who{font-size:.9rem;opacity:.9;margin-top:4px;color:#fff}.svclist .badge{margin:0}
 @media(max-width:700px){.svclist{grid-template-columns:1fr}}
 .payicon.quarter{flex:0 0 64px;height:64px;background:none;border:0;filter:drop-shadow(0 2px 3px #0005)}
+/* pay mobile spacing */
+@media(max-width:600px){.payitem{align-items:flex-start;padding:18px 18px 20px;gap:16px}.payitem h3{font-size:1.2rem;line-height:1.25}.payitem p{line-height:1.5;margin-top:6px}.paybadges{gap:8px;margin-top:14px}.pb{height:32px;min-width:52px;padding:0 10px}.payicon{margin-top:2px}}
+@media(max-width:600px){.payicon{flex-basis:46px;height:46px}.payicon svg{width:26px;height:26px}.payicon.quarter{flex-basis:56px;height:56px}.payicon.quarter svg{width:56px;height:56px}.paybadges{gap:6px}.pb{min-width:0;padding:0 8px}}
