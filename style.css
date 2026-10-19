@@ -88,3 +88,4 @@ section+section::before{background:linear-gradient(90deg,transparent,rgba(33,54,
 
 .svcgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.svcgrid .card{padding:12px 14px;display:flex;align-items:center;justify-content:center;text-align:center}.svcgrid .card h3{margin:0;font-size:1.05rem}.svcgrid .card.feature{grid-column:1/-1;flex-direction:column;padding:14px 16px;text-decoration:none}.svcgrid .card.feature h3{font-size:1.2rem;margin:.2em 0 0}.svcgrid .badge{margin:0}
 @media(max-width:600px){.svcgrid{grid-template-columns:1fr 1fr}.svcgrid .card:nth-child(3){grid-column:1/-1}}
+.svcgrid .who{font-size:.85rem;opacity:.85;margin-top:4px;color:#fff}
