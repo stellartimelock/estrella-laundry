@@ -100,3 +100,20 @@ section+section::before{background:linear-gradient(90deg,transparent,rgba(33,54,
 .sign .band{background:#f6d64a;color:#c23c42;font-family:Georgia,"Times New Roman",serif;font-weight:700;font-style:normal;border-radius:0;margin:0;padding:5px 10px;font-size:1.05rem}
 .sign .stars,.sign .gold{display:none}
 .sign{box-sizing:border-box;max-width:100%}html,body{overflow-x:hidden}
+
+/* v2 sign: matches close-up photo of the pole sign */
+.sign{display:block;margin:6px auto 0;width:min(94vw,460px);box-sizing:border-box;background:#2b4f97;border:7px solid #5d6f8e;border-radius:4px;padding:0;box-shadow:0 12px 30px rgba(0,0,0,.5);position:relative;overflow:hidden;text-align:center}
+.sign .neon{display:none}
+.sign .top{position:relative;background:radial-gradient(ellipse at 70% 0%,#8ccaf2 0%,transparent 60%),linear-gradient(180deg,#4f9fe0 0%,#2f6fbf 100%);padding:10px 14px 12px 56px}
+.sign .rstar{position:absolute;left:10px;top:12px;width:48px;height:46px;filter:drop-shadow(0 2px 2px rgba(0,0,0,.4))}
+.sign .word{font-family:"Brush Script MT","Lobster","Pacifico","Segoe Script",cursive;font-style:italic;font-weight:700;font-size:clamp(2.8rem,11.5vw,4.6rem);line-height:1;margin:0;background:linear-gradient(180deg,#d8424a 0%,#a3242f 55%,#6e1622 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:0;filter:drop-shadow(1.5px 0 0 #fff) drop-shadow(-1.5px 0 0 #fff) drop-shadow(0 1.5px 0 #fff) drop-shadow(0 -1.5px 0 #fff) drop-shadow(0 3px 2px rgba(0,0,0,.35));text-shadow:none}
+.sign .swoosh{height:7px;margin:2px 6% 0 8%;background:linear-gradient(90deg,#b52b35,#8f1d2a);border:1.5px solid #fff;border-radius:0 50% 50% 0/0 100% 100% 0;transform:skewX(-20deg)}
+.sign .laundry{position:relative;background:linear-gradient(180deg,#1f3270,#18285c);border-top:4px solid #fff;color:#fff;font-family:"Montserrat","Arial Black","Helvetica Neue",Arial,sans-serif;font-weight:900;font-size:clamp(2.2rem,9.5vw,3.6rem);letter-spacing:.04em;padding:6px 0 4px;text-shadow:2px 3px 0 rgba(0,0,0,.35)}
+.sign .band{background:linear-gradient(180deg,#f2c75a,#e8b243);border-top:4px solid #fff;border-bottom:4px solid #fff;border-radius:0;margin:0;padding:6px 0}
+.sign .band span{display:inline-block;border-top:2px solid #1f3270;border-bottom:2px solid #1f3270;padding:2px 22px;font-family:Georgia,"Times New Roman",serif;font-weight:700;font-style:normal;color:#a3242f;font-size:clamp(1rem,4.2vw,1.3rem);letter-spacing:.02em}
+.sign .foot{height:14px;background:linear-gradient(180deg,#2f6fbf,#2b5aa6)}
+.sign .sp{position:absolute;color:#fff;line-height:1;text-shadow:0 0 4px rgba(255,255,255,.8);font-size:12px}
+.sign .s1{left:58px;top:58px;font-size:15px}.sign .s2{left:24px;bottom:6px;font-size:10px}.sign .s3{right:12px;top:8px;font-size:11px}.sign .s4{right:30px;top:24px;font-size:8px}.sign .s5{left:10px;top:40%;font-size:11px}.sign .s6{right:10px;top:55%;font-size:12px}
+.sign .stars,.sign .gold{display:none}
+.sign .word{font-size:clamp(3.4rem,15vw,5.6rem);line-height:1.05}.sign .top{padding:6px 10px 10px 50px}
+.signwrap{position:relative;padding-top:58px;width:min(94vw,460px);margin:0 auto}.signwrap .sign{margin:0 auto;width:100%}.neon2{position:absolute;top:0;left:50%;transform:translateX(-50%);width:70px;height:66px;filter:drop-shadow(0 0 5px #f3d23a)}

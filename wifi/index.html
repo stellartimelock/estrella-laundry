@@ -1,16 +1,33 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow"><title>Free Wi-Fi / Wi-Fi Gratis | Estrella Laundry</title>
-<link rel="stylesheet" href="../style.css?v=20261016g"><link rel="stylesheet" href="wifi.css?v=20261016g"></head><body class="wifipage">
-<header class="hero wifihero"><div class="sign"><div class="stars">★ ★ ★</div><div class="word">Estrella</div><div class="laundry">LAUNDRY</div><div class="band">Established 1971</div><div class="gold">★</div></div></header>
+<link rel="stylesheet" href="../style.css?v=20261019h"><link rel="stylesheet" href="wifi.css?v=20261019f"></head><body class="wifipage">
+<header class="hero wifihero"><div class="signwrap"><svg class="neon2" viewBox="0 0 100 96" aria-hidden="true"><polygon points="50,4 61,37 96,37 68,58 79,92 50,71 21,92 32,58 4,37 39,37" fill="none" stroke="#f3d23a" stroke-width="4" stroke-linejoin="round"/></svg><div class="sign"><div class="top"><svg class="rstar" viewBox="0 0 100 96" aria-hidden="true"><defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7d25a"/><stop offset=".5" stop-color="#e59a2e"/><stop offset="1" stop-color="#a8262c"/></linearGradient></defs><polygon points="50,3 62,36 97,37 69,58 80,93 50,72 20,93 31,58 3,37 38,36" fill="url(#sg)" stroke="#f7d25a" stroke-width="3" stroke-linejoin="round"/><polygon points="50,3 50,50 97,37 62,36" fill="#ffe08a" opacity=".55"/><polygon points="50,50 80,93 50,72" fill="#7d1820" opacity=".45"/></svg><span class="sp s1">✦</span><span class="sp s2">✦</span><span class="sp s3">✦</span><span class="sp s4">✦</span><div class="word">Estrella</div><div class="swoosh"></div></div><div class="laundry"><span class="sp s5">✦</span>LAUNDRY<span class="sp s6">✦</span></div><div class="band"><span>Established 1971</span></div><div class="foot"></div></div></div></header>
 <main class="wrap"><section class="wificard">
 <h1>Free Wi-Fi <span>/ Wi-Fi Gratis</span></h1>
-<div class="row"><span class="lbl">Network / Red</span><code>Verizon_VXK7CQ</code></div>
-<div class="row"><span class="lbl">Password / Contraseña</span><code id="pw">fog6-vane-motor</code>
-<button class="btn copy" id="copy" type="button">Copy / Copiar</button></div>
-<img class="qr" src="wifi-qr.svg" alt="QR code to join the Estrella Laundry Wi-Fi" width="260" height="260">
-<p class="note">On iPhone/Android, point your camera at the code to join.<br><em>En iPhone/Android, apunte la cámara al código para conectarse.</em></p>
+<p class="note">Scan the Wi-Fi QR code on the wall inside Estrella Laundry.<br><em>Escanee el código QR de Wi-Fi en la pared dentro de Estrella Laundry.</em></p>
+<button class="btn scanbtn" id="start" type="button">Open scanner / Abrir escáner</button>
+<div class="scanbox" id="box" hidden><video id="v" playsinline muted></video><div class="frame"></div></div>
+<p class="status" id="st"></p>
+<div class="result" id="res" hidden>
+<div class="row"><span class="lbl">Network / Red</span><code id="ssid"></code></div>
+<div class="row"><span class="lbl">Password / Contraseña</span><code id="pw"></code><button class="btn copy" id="copy" type="button">Copy / Copiar</button></div>
+<p class="note">Open your phone's Wi-Fi settings, pick this network and paste the password.<br><em>Abra la configuración de Wi-Fi, elija esta red y pegue la contraseña.</em></p>
+</div>
+<p class="note small">Tip: your phone's regular camera app can also scan the wall code and join in one tap.<br><em>Consejo: la cámara normal de su teléfono también puede escanear el código y conectarse.</em></p>
 <p><a href="/">← Back to home / Volver al inicio</a></p>
 </section></main>
-<script>document.getElementById('copy').onclick=function(){var b=this,t='fog6-vane-motor';function done(){b.textContent='Copied! / ¡Copiado!';setTimeout(function(){b.textContent='Copy / Copiar'},2000)}
-if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,fb)}else fb();function fb(){var r=document.createRange();r.selectNodeContents(document.getElementById('pw'));var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');done()}catch(e){}}}</script>
+<script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+<script>
+(function(){var v=document.getElementById('v'),st=document.getElementById('st'),box=document.getElementById('box'),stream,det=null,cv=document.createElement('canvas'),cx=cv.getContext('2d',{willReadFrequently:true});
+function parse(t){if(!/^WIFI:/i.test(t))return null;var o={};t.slice(5).replace(/(\w):((?:\\.|[^;])*);/g,function(_,k,val){o[k.toUpperCase()]=val.replace(/\\(.)/g,'$1')});return o.S?o:null}
+function stop(){if(stream)stream.getTracks().forEach(function(t){t.stop()});box.hidden=true}
+function found(t){var w=parse(t);if(!w){st.textContent='That is not a Wi-Fi code. Try the one on the wall. / Ese no es un código de Wi-Fi.';return false}
+stop();document.getElementById('ssid').textContent=w.S;document.getElementById('pw').textContent=w.P||'(none / ninguna)';document.getElementById('res').hidden=false;st.textContent='Found it! / ¡Listo!';return true}
+function tick(){if(box.hidden)return;if(v.readyState>=2){if(det){det.detect(v).then(function(c){if(c.length&&found(c[0].rawValue))return;requestAnimationFrame(tick)}).catch(function(){requestAnimationFrame(tick)});return}
+if(window.jsQR){cv.width=v.videoWidth;cv.height=v.videoHeight;cx.drawImage(v,0,0);var d=cx.getImageData(0,0,cv.width,cv.height),c=jsQR(d.data,d.width,d.height);if(c&&found(c.data))return}}requestAnimationFrame(tick)}
+document.getElementById('start').onclick=function(){st.textContent='Point your camera at the code. / Apunte la cámara al código.';document.getElementById('res').hidden=true;
+if('BarcodeDetector' in window){try{det=new BarcodeDetector({formats:['qr_code']})}catch(e){det=null}}
+navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'},audio:false}).then(function(s){stream=s;v.srcObject=s;box.hidden=false;v.play();tick()}).catch(function(){st.textContent='Camera blocked. Use your phone camera app instead. / Cámara bloqueada. Use la cámara del teléfono.'})};
+document.getElementById('copy').onclick=function(){var b=this,t=document.getElementById('pw').textContent;navigator.clipboard&&navigator.clipboard.writeText(t).then(function(){b.textContent='Copied! / ¡Copiado!';setTimeout(function(){b.textContent='Copy / Copiar'},2000)})};})();
+</script>
 </body></html>

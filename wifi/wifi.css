@@ -6,3 +6,7 @@
 .copy{border:0;cursor:pointer;font:inherit;font-weight:700}.qr{display:block;margin:18px auto;width:260px;max-width:80%;height:auto;border:8px solid #ffffff;outline:3px solid var(--navy);border-radius:6px}
 .note{color:#384357}
 .wifihero{padding-bottom:40px}.wificard{margin-top:-20px}
+
+.scanbtn{display:block;margin:14px auto;background:var(--navy);color:#fff;border:0;border-radius:30px;padding:14px 26px;font-weight:700;font-size:1.05rem;cursor:pointer}
+.scanbox{position:relative;max-width:340px;margin:10px auto;border-radius:14px;overflow:hidden;background:#000;aspect-ratio:1}.scanbox video{width:100%;height:100%;object-fit:cover;display:block}.scanbox .frame{position:absolute;inset:16%;border:3px solid #f6d64a;border-radius:12px;box-shadow:0 0 0 999px rgba(0,0,0,.35)}
+.status{text-align:center;font-weight:600;color:var(--navy)}.result{margin-top:10px}.note.small{font-size:.85rem;opacity:.8}
