@@ -202,3 +202,4 @@ footer{padding:16px 20px}
 .payitem>div:not(.payicon):not(.paybadges){flex:1 1 0;min-width:0}
 .vacc{display:inline-flex;align-items:center;gap:6px;margin:10px 0 0;background:#fff;color:var(--navy);font-weight:800;font-size:.95rem;border-radius:20px;padding:5px 12px}.vacc span{font-size:1.1rem}
 .vacc{white-space:nowrap;font-size:.85rem;padding:5px 10px}
+.svclist .fdesc{margin:4px 0 2px;color:#fff;font-size:.98rem}
