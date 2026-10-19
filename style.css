@@ -130,3 +130,10 @@ section+section::before{background:linear-gradient(90deg,transparent,rgba(33,54,
 .sign .word{font-size:clamp(4.4rem,20vw,7rem);margin:-4px 0 -12px}.sign .top{padding:2px 4px 4px 52px}.sign .laundry{font-size:clamp(2.7rem,12.5vw,4.4rem);letter-spacing:.02em;padding:2px 0 0;line-height:1.1}.sign .band span{font-size:clamp(1.15rem,5vw,1.5rem)}
 .signwrap{width:100%;max-width:460px;box-sizing:border-box;margin:0 auto}.signwrap .sign{width:100%;max-width:100%;margin:0}.hero{padding-left:14px;padding-right:14px}
 .sign .rstar{width:60px;height:60px;left:6px;top:6px;filter:drop-shadow(3px 4px 1px rgba(15,30,70,.65))}
+
+.pay .paygrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.payitem{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#ffffff,#fff7df);border:2px solid #deb94a;border-radius:14px;padding:14px 16px;box-shadow:0 6px 18px rgba(33,54,109,.12)}
+.payitem h3{margin:0;color:var(--navy);font-size:1.15rem}.payitem p{margin:.25em 0 0;font-size:.95rem;color:#3b4a6b}
+.payicon{flex:0 0 54px;height:54px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.05rem}
+.payicon.coin{background:radial-gradient(circle at 35% 30%,#f4f4f4,#b9bec6 60%,#8a9099);color:#2b3550;border:3px solid #9aa1ab}
+@media(max-width:600px){.pay .paygrid{grid-template-columns:1fr}}
