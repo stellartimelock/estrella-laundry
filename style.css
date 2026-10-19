@@ -166,3 +166,11 @@ section+section::before{background:linear-gradient(90deg,transparent,rgba(33,54,
 /* pay mobile spacing */
 @media(max-width:600px){.payitem{align-items:flex-start;padding:18px 18px 20px;gap:16px}.payitem h3{font-size:1.2rem;line-height:1.25}.payitem p{line-height:1.5;margin-top:6px}.paybadges{gap:8px;margin-top:14px}.pb{height:32px;min-width:52px;padding:0 10px}.payicon{margin-top:2px}}
 @media(max-width:600px){.payicon{flex-basis:46px;height:46px}.payicon svg{width:26px;height:26px}.payicon.quarter{flex-basis:56px;height:56px}.payicon.quarter svg{width:56px;height:56px}.paybadges{gap:6px}.pb{min-width:0;padding:0 8px}}
+
+/* hours + visit cards */
+.hourscard,.visitcard{background:#fff;border-radius:14px;padding:8px 22px 18px;box-shadow:0 4px 14px rgba(33,54,109,.12);border-top:5px solid var(--sky);max-width:620px}
+.hrow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid #e3e8f0}
+.hrow .days{font-weight:700;color:var(--navy);font-size:1.08rem}.hrow .time{font-weight:800;color:var(--red);font-size:1.08rem;white-space:nowrap}
+.holiday{margin:16px 0 0;background:var(--gold);color:var(--navy);font-weight:800;font-size:1.05rem;border-radius:10px;padding:10px 14px;text-align:center}
+.visitcard{padding:18px 22px}.visitcard .addr{font-size:1.15rem;font-weight:700;color:var(--navy);margin:0 0 10px;line-height:1.45}.vphone{font-size:1.15rem;font-weight:800;color:var(--red);text-decoration:none}
+@media(max-width:420px){.hrow{flex-direction:column;align-items:flex-start;gap:4px}}
