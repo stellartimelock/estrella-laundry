@@ -174,3 +174,17 @@ section+section::before{background:linear-gradient(90deg,transparent,rgba(33,54,
 .holiday{margin:16px 0 0;background:var(--gold);color:var(--navy);font-weight:800;font-size:1.05rem;border-radius:10px;padding:10px 14px;text-align:center}
 .visitcard{padding:18px 22px}.visitcard .addr{font-size:1.15rem;font-weight:700;color:var(--navy);margin:0 0 10px;line-height:1.45}.vphone{font-size:1.15rem;font-weight:800;color:var(--red);text-decoration:none}
 @media(max-width:420px){.hrow{flex-direction:column;align-items:flex-start;gap:4px}}
+
+/* visit card v2 */
+.visitcard{padding:22px;display:flex;flex-direction:column;gap:18px;background:linear-gradient(135deg,var(--navy),#2f559e);border-top:5px solid var(--gold)}
+.vtop{display:flex;align-items:center;gap:16px}.vpin{flex:0 0 56px;height:56px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;box-shadow:0 3px 8px #0004}
+.visitcard .addr{color:#fff;margin:0;font-size:1.2rem}.vcorner{margin:4px 0 0;color:#dbe6f7;font-size:.95rem}
+.vdir{display:block;text-align:center;font-size:1.05rem;padding:14px 22px}
+.bottombar .btn{flex:1}
+/* footer v2 */
+footer{display:flex;flex-direction:column;align-items:center;gap:2px;padding:28px 20px calc(96px + env(safe-area-inset-bottom))}
+footer .fw{font-family:EstrellaScript,"Yellowtail",cursive;font-style:normal;color:#fff;-webkit-text-stroke:0;font-size:2.6rem;line-height:1.1;text-shadow:2px 2px 0 var(--red),0 3px 10px #0006}
+footer .fl{font-family:EstrellaSans,Montserrat,sans-serif;font-weight:800;letter-spacing:.3em;color:var(--gold);font-size:.95rem;padding-left:.3em}
+footer .fs{margin-top:8px;font-size:.95rem;color:#dbe6f7}
+.bottombar{grid-template-columns:1fr}
+@media(min-width:700px){.bottombar{padding-left:calc(50% - 200px);padding-right:calc(50% - 200px)}}
