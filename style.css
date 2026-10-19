@@ -99,3 +99,4 @@ section+section::before{background:linear-gradient(90deg,transparent,rgba(33,54,
 .sign .laundry{background:#1f2f63;color:#ffffff;font-weight:900;font-size:clamp(2rem,8vw,3.2rem);letter-spacing:.06em;padding:4px 0 2px}
 .sign .band{background:#f6d64a;color:#c23c42;font-family:Georgia,"Times New Roman",serif;font-weight:700;font-style:normal;border-radius:0;margin:0;padding:5px 10px;font-size:1.05rem}
 .sign .stars,.sign .gold{display:none}
+.sign{box-sizing:border-box;max-width:100%}html,body{overflow-x:hidden}
