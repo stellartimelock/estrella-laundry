@@ -193,3 +193,4 @@ footer .fs{margin-top:8px;font-size:.95rem;color:#dbe6f7}
 main.wrap{padding-bottom:calc(90px + env(safe-area-inset-bottom))}
 main.wrap{padding-bottom:0}
 footer .thx{margin:0;font-size:1.15rem;font-weight:700;color:#fff;line-height:1.4}
+footer{padding:16px 20px}
