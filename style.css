@@ -137,3 +137,10 @@ section+section::before{background:linear-gradient(90deg,transparent,rgba(33,54,
 .payicon{flex:0 0 54px;height:54px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.05rem}
 .payicon.coin{background:radial-gradient(circle at 35% 30%,#f4f4f4,#b9bec6 60%,#8a9099);color:#2b3550;border:3px solid #9aa1ab}
 @media(max-width:600px){.pay .paygrid{grid-template-columns:1fr}}
+
+.paybadges{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.pb{display:inline-flex;align-items:center;justify-content:center;gap:3px;height:28px;min-width:46px;padding:0 8px;border-radius:6px;font-weight:800;font-size:.85rem;box-shadow:0 1px 3px rgba(0,0,0,.18);box-sizing:border-box}
+.pb.visa{background:#1a1f71;color:#fff;font-style:italic;letter-spacing:.04em}
+.pb.mc{background:#fff;border:1px solid #d8dce4;padding:0 6px}.pb.mc i{display:block;width:16px;height:16px;border-radius:50%;background:#eb001b}.pb.mc i+i{background:#f79e1b;margin-left:-7px;mix-blend-mode:multiply}
+.pb.apay{background:#000;color:#fff;font-weight:600;letter-spacing:.01em}
+.pb.tap{background:#fff;border:1px solid #d8dce4;color:#21366d;font-weight:700}
