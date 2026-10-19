@@ -117,3 +117,13 @@ section+section::before{background:linear-gradient(90deg,transparent,rgba(33,54,
 .sign .stars,.sign .gold{display:none}
 .sign .word{font-size:clamp(3.4rem,15vw,5.6rem);line-height:1.05}.sign .top{padding:6px 10px 10px 50px}
 .signwrap{position:relative;padding-top:58px;width:min(94vw,460px);margin:0 auto}.signwrap .sign{margin:0 auto;width:100%}.neon2{position:absolute;top:0;left:50%;transform:translateX(-50%);width:70px;height:66px;filter:drop-shadow(0 0 5px #f3d23a)}
+
+@font-face{font-family:"EstrellaScript";src:url(/fonts/yellowtail.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"EstrellaSans";src:url(/fonts/montserrat-800.woff2) format("woff2");font-weight:800;font-display:swap}
+.sign .top{padding:4px 8px 6px 54px}
+.sign .rstar{left:8px;top:8px;width:56px;height:56px;filter:drop-shadow(1px 2px 2px rgba(0,0,0,.45))}
+.sign .word{font-family:"EstrellaScript","Brush Script MT",cursive;font-style:normal;font-weight:400;font-size:clamp(3.6rem,16vw,6rem);line-height:1.1;letter-spacing:.01em;background:none;color:#b0283a;-webkit-text-stroke:2.2px #b0283a;paint-order:stroke fill;filter:drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(2px 3px 0 #5a1420);transform:rotate(-4deg);margin:2px 0 -6px}
+.sign .swoosh2{display:block;width:84%;height:16px;margin:0 4% 4px auto;filter:drop-shadow(1px 2px 0 #5a1420)}
+.sign .laundry{font-family:"EstrellaSans","Montserrat","Arial Black",sans-serif;font-weight:800}
+.sign .word{transform:rotate(-2deg);font-size:clamp(3.9rem,17.5vw,6.4rem);margin:0 0 -10px}.sign .swoosh2{height:20px;width:88%}.sign .band span{padding:2px 40px}
+.sign{border:3px solid rgba(255,255,255,.85);box-shadow:0 0 0 1px rgba(255,255,255,.25),0 12px 30px rgba(0,0,0,.45)}
