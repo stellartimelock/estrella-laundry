@@ -127,3 +127,5 @@ section+section::before{background:linear-gradient(90deg,transparent,rgba(33,54,
 .sign .laundry{font-family:"EstrellaSans","Montserrat","Arial Black",sans-serif;font-weight:800}
 .sign .word{transform:rotate(-2deg);font-size:clamp(3.9rem,17.5vw,6.4rem);margin:0 0 -10px}.sign .swoosh2{height:20px;width:88%}.sign .band span{padding:2px 40px}
 .sign{border:3px solid rgba(255,255,255,.85);box-shadow:0 0 0 1px rgba(255,255,255,.25),0 12px 30px rgba(0,0,0,.45)}
+.sign .word{font-size:clamp(4.4rem,20vw,7rem);margin:-4px 0 -12px}.sign .top{padding:2px 4px 4px 52px}.sign .laundry{font-size:clamp(2.7rem,12.5vw,4.4rem);letter-spacing:.02em;padding:2px 0 0;line-height:1.1}.sign .band span{font-size:clamp(1.15rem,5vw,1.5rem)}
+.signwrap{width:100%;max-width:460px;box-sizing:border-box;margin:0 auto}.signwrap .sign{width:100%;max-width:100%;margin:0}.hero{padding-left:14px;padding-right:14px}
