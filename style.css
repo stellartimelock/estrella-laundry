@@ -195,3 +195,10 @@ main.wrap{padding-bottom:0}
 footer .thx{margin:0;font-size:1.15rem;font-weight:700;color:#fff;line-height:1.4}
 footer{padding:16px 20px}
 .nw{white-space:nowrap}
+
+/* badges full row */
+.payitem{flex-wrap:wrap}.payitem>.paybadges{flex-basis:100%;justify-content:center;margin-top:4px;gap:8px}
+@media(max-width:600px){.payitem>.paybadges .pb{height:34px;padding:0 10px}.payicon.quarter{flex-basis:64px;height:64px}.payicon.quarter svg{width:64px;height:64px}}
+.payitem>div:not(.payicon):not(.paybadges){flex:1 1 0;min-width:0}
+.vacc{display:inline-flex;align-items:center;gap:6px;margin:10px 0 0;background:#fff;color:var(--navy);font-weight:800;font-size:.95rem;border-radius:20px;padding:5px 12px}.vacc span{font-size:1.1rem}
+.vacc{white-space:nowrap;font-size:.85rem;padding:5px 10px}
