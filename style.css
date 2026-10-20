@@ -18,7 +18,7 @@ section{padding:36px 0;border-bottom:1px solid #dfe4ed}h2{color:var(--navy);bord
 .amen{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none}.amen li{background:var(--navy);color:#ffffff;border-radius:20px;padding:8px 14px}
 .amen li:before{content:"★ ";color:var(--gold)}.ph{color:#9a5a16;font-style:italic;font-size:.9em}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}figure{margin:0;background:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px #00000022}
-figure img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}figcaption{padding:10px 14px;font-weight:600;color:var(--navy)}
+figure img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block}figcaption{padding:10px 14px;font-weight:600;color:var(--navy)}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}table{border-collapse:collapse;width:100%}td{padding:8px;border-bottom:1px solid #dfe4ed}
 .small{font-size:.9em}a{color:#2a66ab}footer{background:var(--navy);color:#ffffff;text-align:center;padding:24px}
 .fw{font-family:"Brush Script MT","Lobster","Pacifico",cursive;color:var(--red);-webkit-text-stroke:1px #ffffff;font-size:1.6em;font-style:italic}
