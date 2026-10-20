@@ -206,3 +206,6 @@ footer{padding:16px 20px}
 .accbtn{background:var(--navy);cursor:default}.accbtn:hover{background:var(--navy)}.accic{font-size:1.25rem;line-height:1}
 .fbwrap.fbwrap-svc{flex-wrap:wrap}
 .bizbadges{list-style:none;padding:0;margin:10px 0 2px;display:flex;flex-wrap:wrap;justify-content:center;gap:7px}.bizbadges li{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);color:#fff;font-weight:700;font-size:.85rem;border-radius:20px;padding:5px 11px;white-space:nowrap}
+
+/* view counter */
+footer .views{display:flex;align-items:center;justify-content:center;gap:5px;margin:6px 0 0;font-size:.8rem;color:#c9d6ee;opacity:.85;line-height:1}footer .views[hidden]{display:none}footer .views svg{flex:0 0 auto}
