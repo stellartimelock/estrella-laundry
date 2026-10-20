@@ -1,0 +1,1 @@
+fetch("/api/views",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){if(typeof d.views!=="number"||d.views<1)return;document.getElementById("viewsn").textContent=d.views.toLocaleString("en-US")+(d.views===1?" view":" views");document.getElementById("views").hidden=false}).catch(function(){})
