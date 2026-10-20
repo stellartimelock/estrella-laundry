@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow"><title>Free Wi-Fi / Wi-Fi Gratis | Estrella Laundry</title>
-<link rel="stylesheet" href="../style.css?v=20261019n"><link rel="stylesheet" href="wifi.css?v=20261019f"></head><body class="wifipage">
+<link rel="stylesheet" href="../style.css?v=20261019sec"><link rel="stylesheet" href="wifi.css?v=20261019sec"></head><body class="wifipage">
 <header class="hero wifihero"><div class="signwrap"><svg class="neon2" viewBox="0 0 100 96" aria-hidden="true"><polygon points="50,4 61,37 96,37 68,58 79,92 50,71 21,92 32,58 4,37 39,37" fill="none" stroke="#f3d23a" stroke-width="4" stroke-linejoin="round"/></svg><div class="sign"><div class="top"><svg class="rstar" viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="sl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eaa52c"/><stop offset=".6" stop-color="#f5c955"/><stop offset="1" stop-color="#fbe7a2"/></linearGradient><linearGradient id="sd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6e1a26"/><stop offset=".55" stop-color="#a8352f"/><stop offset="1" stop-color="#e08a3c"/></linearGradient></defs><polygon points="50,50 42.3,32.6 59.6,5.0" fill="url(#sd)"/><polygon points="50,50 59.6,5.0 64.1,37.3" fill="url(#sl)"/><polygon points="50,50 64.1,37.3 95.7,45.2" fill="url(#sl)"/><polygon points="50,50 95.7,45.2 66.5,59.5" fill="url(#sd)"/><polygon points="50,50 66.5,59.5 68.7,92.0" fill="url(#sd)"/><polygon points="50,50 68.7,92.0 46.0,68.6" fill="url(#sl)"/><polygon points="50,50 46.0,68.6 15.8,80.8" fill="url(#sd)"/><polygon points="50,50 15.8,80.8 31.1,52.0" fill="url(#sl)"/><polygon points="50,50 31.1,52.0 10.2,27.0" fill="url(#sl)"/><polygon points="50,50 10.2,27.0 42.3,32.6" fill="url(#sd)"/></svg><span class="sp s1">✦</span><span class="sp s2">✦</span><span class="sp s3">✦</span><span class="sp s4">✦</span><div class="word">Estrella</div><svg class="swoosh2" viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 18 C 90 10, 200 6, 296 4 C 210 12, 110 18, 14 22 Z" fill="#a3242f" stroke="#fff" stroke-width="2"/></svg></div><div class="laundry"><span class="sp s5">✦</span>LAUNDRY<span class="sp s6">✦</span></div><div class="band"><span>Established 1971</span></div><div class="foot"></div></div></div></header>
 <main class="wrap"><section class="wificard">
 <h1>Free Wi-Fi <span>/ Wi-Fi Gratis</span></h1>
@@ -16,18 +16,6 @@
 <p class="note small">Tip: your phone's regular camera app can also scan the wall code and join in one tap.<br><em>Consejo: la cámara normal de su teléfono también puede escanear el código y conectarse.</em></p>
 <p><a href="/">← Back to home / Volver al inicio</a></p>
 </section></main>
-<script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
-<script>
-(function(){var v=document.getElementById('v'),st=document.getElementById('st'),box=document.getElementById('box'),stream,det=null,cv=document.createElement('canvas'),cx=cv.getContext('2d',{willReadFrequently:true});
-function parse(t){if(!/^WIFI:/i.test(t))return null;var o={};t.slice(5).replace(/(\w):((?:\\.|[^;])*);/g,function(_,k,val){o[k.toUpperCase()]=val.replace(/\\(.)/g,'$1')});return o.S?o:null}
-function stop(){if(stream)stream.getTracks().forEach(function(t){t.stop()});box.hidden=true}
-function found(t){var w=parse(t);if(!w){st.textContent='That is not a Wi-Fi code. Try the one on the wall. / Ese no es un código de Wi-Fi.';return false}
-stop();document.getElementById('ssid').textContent=w.S;document.getElementById('pw').textContent=w.P||'(none / ninguna)';document.getElementById('res').hidden=false;st.textContent='Found it! / ¡Listo!';return true}
-function tick(){if(box.hidden)return;if(v.readyState>=2){if(det){det.detect(v).then(function(c){if(c.length&&found(c[0].rawValue))return;requestAnimationFrame(tick)}).catch(function(){requestAnimationFrame(tick)});return}
-if(window.jsQR){cv.width=v.videoWidth;cv.height=v.videoHeight;cx.drawImage(v,0,0);var d=cx.getImageData(0,0,cv.width,cv.height),c=jsQR(d.data,d.width,d.height);if(c&&found(c.data))return}}requestAnimationFrame(tick)}
-document.getElementById('start').onclick=function(){st.textContent='Point your camera at the code. / Apunte la cámara al código.';document.getElementById('res').hidden=true;
-if('BarcodeDetector' in window){try{det=new BarcodeDetector({formats:['qr_code']})}catch(e){det=null}}
-navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'},audio:false}).then(function(s){stream=s;v.srcObject=s;box.hidden=false;v.play();tick()}).catch(function(){st.textContent='Camera blocked. Use your phone camera app instead. / Cámara bloqueada. Use la cámara del teléfono.'})};
-document.getElementById('copy').onclick=function(){var b=this,t=document.getElementById('pw').textContent;navigator.clipboard&&navigator.clipboard.writeText(t).then(function(){b.textContent='Copied! / ¡Copiado!';setTimeout(function(){b.textContent='Copy / Copiar'},2000)})};})();
-</script>
+<script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js" integrity="sha384-b5Ya4Bq3qCyz39m2ISh+4DxjAIljdeFwK/BsXLuj9gugaNwAcj/ia15fxNZL9Nlx" crossorigin="anonymous"></script>
+<script src="wifi.js?v=20261019sec"></script>
 </body></html>

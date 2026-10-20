@@ -209,3 +209,5 @@ footer{padding:16px 20px}
 
 /* view counter */
 footer .views{display:flex;align-items:center;justify-content:center;gap:5px;margin:6px 0 0;font-size:.8rem;color:#c9d6ee;opacity:.85;line-height:1}footer .views[hidden]{display:none}footer .views svg{flex:0 0 auto}
+
+.hp{display:none}
