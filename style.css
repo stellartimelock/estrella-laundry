@@ -213,3 +213,6 @@ footer .views{display:flex;align-items:center;justify-content:center;gap:5px;mar
 .hp{display:none}
 
 @media(min-width:600px){.gallery{grid-template-columns:repeat(2,1fr)}}
+
+.svclist .card.feature .fsub{margin:2px 0 6px;color:var(--gold);font-weight:800;font-size:1.02rem}.svclist .card.feature .fdesc{max-width:640px;line-height:1.45}.svclist .card.feature .fcta a{color:var(--gold);font-weight:800;text-decoration:underline}
+figcaption .captitle{display:block}figcaption .capdesc{display:block;margin-top:3px;font-weight:400;font-size:.92rem;color:#3b4a6b;line-height:1.4}
